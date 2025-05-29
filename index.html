@@ -6,7 +6,6 @@
   <title>Khách Hàng Là Thượng Đế</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Hiệu ứng chữ nổi nhẹ
     document.addEventListener('DOMContentLoaded', () => {
       const hero = document.querySelector('#hero-title');
       if (hero) {
@@ -23,28 +22,28 @@
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <a href="#" class="text-2xl font-bold text-green-600">Khách Hàng Là Thượng Đế</a>
       <nav class="space-x-6 text-sm font-semibold">
-        <a href="index.html" class="hover:text-green-600">Trang chủ</a>
-        <a href="search.html" class="hover:text-green-600">Tìm kiếm</a>
-        <a href="places.html" class="hover:text-green-600">Địa điểm</a>
-        <a href="about.html" class="hover:text-green-600">Giới thiệu</a>
+        <a href="index.html" class="hover:text-green-600">Trang chủ / Home</a>
+        <a href="search.html" class="hover:text-green-600">Tìm kiếm / Search</a>
+        <a href="places.html" class="hover:text-green-600">Địa điểm / Places</a>
+        <a href="about.html" class="hover:text-green-600">Giới thiệu / About</a>
         <a href="dashboard.html" class="hover:text-green-600">Dashboard</a>
-        <a href="#signup" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Đăng ký</a>
+        <a href="#signup" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Đăng ký / Register</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-green-50 via-white to-green-100 py-20">
+  <section class="bg-gradient-to-r from-green-100 via-white to-green-200 py-20">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
         <div>
-          <h1 id="hero-title" class="text-4xl font-bold mb-4">
+          <h1 id="hero-title" class="text-5xl font-extrabold mb-6 leading-tight">
             Đưa dữ liệu đánh giá vào quyết định của bạn<br>
-            <span class="text-gray-600 text-xl">Turn review data into better choices</span>
+            <span class="text-green-700 text-xl block mt-2">Turn review data into better choices</span>
           </h1>
-          <p class="mb-6 text-lg">
-            Nền tảng phân tích đánh giá dựa trên dữ liệu do người dùng tạo (UGC), sử dụng AI để tổng hợp và trích xuất thông tin quan trọng.<br>
-            <span class="text-gray-600">AI-powered insights from user-generated reviews — neutral, reliable, and smart.</span>
+          <p class="mb-6 text-lg text-gray-700">
+            Nền tảng phân tích thông minh dựa trên dữ liệu do người dùng tạo (UGC), sử dụng AI để trích xuất ý kiến khách hàng từ các đánh giá trực tuyến — trung thực, đáng tin cậy, và hữu ích.<br>
+            <span class="text-sm text-gray-500">AI-powered platform using user-generated content (UGC) to extract valuable customer insights — neutral, reliable, and useful.</span>
           </p>
           <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
             <a href="#signup" class="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition">Trải nghiệm sớm / Join Early Access</a>
@@ -52,10 +51,50 @@
           </div>
         </div>
         <div>
-          <img src="https://cdn.pixabay.com/photo/2023/04/07/08/32/ai-7905480_960_720.png" alt="AI Analysis" class="rounded-lg shadow-lg animate__animated animate__fadeIn" />
+          <img src="https://cdn.pixabay.com/photo/2023/03/20/10/18/artificial-intelligence-7865884_960_720.jpg" alt="AI Analysis" class="rounded-xl shadow-xl animate__animated animate__fadeIn" />
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Features Section -->
+  <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Tại sao chọn chúng tôi? / Why choose us?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 border rounded-lg shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Phân tích cảm xúc / Sentiment Analysis</h3>
+          <p class="text-gray-600">Hiểu được khách hàng thực sự cảm thấy thế nào qua từng dòng đánh giá.<br><span class="text-sm text-gray-500">Understand how your customers truly feel through their reviews.</span></p>
+        </div>
+        <div class="p-6 border rounded-lg shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Phát hiện chủ đề nổi bật / Topic Discovery</h3>
+          <p class="text-gray-600">Tự động nhận diện các chủ đề mà khách hàng đang bàn luận nhiều nhất.<br><span class="text-sm text-gray-500">Automatically detect what topics your customers talk about the most.</span></p>
+        </div>
+        <div class="p-6 border rounded-lg shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Giao diện trực quan / Visual Dashboard</h3>
+          <p class="text-gray-600">Hiển thị thông tin qua dashboard sinh động và dễ sử dụng.<br><span class="text-sm text-gray-500">Insights presented through clean, interactive dashboards.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-green-600 py-16 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Sẵn sàng để hiểu khách hàng của bạn hơn?<br><span class="text-lg font-normal">Ready to understand your customers better?</span></h2>
+    <p class="mb-6">Hãy thử nền tảng của chúng tôi ngay hôm nay để nâng cao trải nghiệm và uy tín thương hiệu của bạn.<br><span class="text-sm text-green-100">Try our platform today to improve experience and boost your brand trust.</span></p>
+    <a href="#signup" class="bg-white text-green-600 font-semibold px-6 py-3 rounded-full hover:bg-green-50">Đăng ký trải nghiệm sớm / Get Started</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-600 text-sm">&copy; 2025 Khách Hàng Là Thượng Đế. All rights reserved.</p>
+      <div class="space-x-4 mt-4 md:mt-0">
+        <a href="about.html" class="text-gray-600 hover:text-green-600 text-sm">Giới thiệu / About</a>
+        <a href="places.html" class="text-gray-600 hover:text-green-600 text-sm">Địa điểm / Places</a>
+        <a href="mailto:contact@khachhanglathuongde.com" class="text-gray-600 hover:text-green-600 text-sm">Liên hệ / Contact</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
