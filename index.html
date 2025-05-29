@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -6,14 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Khách Hàng Là Thượng Đế</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3503/3503748.png" />
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-green-600">Khách Hàng Là Thượng Đế</a>
+      <nav class="space-x-6 text-sm font-semibold">
+        <a href="#features" class="hover:text-green-600">Tính năng</a>
+        <a href="#search" class="hover:text-green-600">Tìm kiếm</a>
+        <a href="#signup" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Đăng ký</a>
+      </nav>
+    </div>
+  </header>
+
   <!-- Hero Section -->
   <section class="bg-green-100 py-20">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h1 class="text-4xl font-bold mb-4">
-        Tham khảo chất lượng dịch vụ trước khi sử dụng<br>
-        <span class="text-gray-600 text-xl">Check service quality before using</span>
+        Hiểu khách hàng trước khi bạn bước vào quán<br>
+        <span class="text-gray-600 text-xl">Understand customer opinions before you even enter the place</span>
       </h1>
       <p class="mb-6 text-lg">
         Nền tảng phân tích review thông minh từ Google, Foody, TripAdvisor...<br>
@@ -24,7 +36,7 @@
   </section>
 
   <!-- Features Section -->
-  <section class="py-20 bg-white">
+  <section id="features" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">Tính năng chính / Key Features</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -48,11 +60,35 @@
     </div>
   </section>
 
-  <!-- Demo/Screenshot Section -->
-  <section class="bg-gray-50 py-20">
+  <!-- Search Section -->
+  <section id="search" class="py-20 bg-gray-50">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Trực quan và dễ hiểu<br><span class="text-gray-600">Visual, clear, and powerful</span></h2>
-      <img src="https://via.placeholder.com/800x400?text=Ảnh+dashboard+phân+tích" alt="Dashboard Screenshot" class="rounded shadow-md mx-auto">
+      <h2 class="text-3xl font-bold mb-6">🔍 Tìm kiếm địa điểm / Search Places</h2>
+      <input type="text" placeholder="Nhập tên địa điểm..." class="w-full md:w-2/3 px-4 py-3 rounded shadow border border-gray-300 focus:outline-none focus:ring focus:ring-green-300" />
+    </div>
+  </section>
+
+  <!-- Destination Layout Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">🏖️ Địa điểm nổi bật (đang cập nhật)</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <div class="bg-gray-300 h-40 rounded mb-4"></div>
+          <h3 class="font-semibold text-lg mb-2">Tên địa điểm A</h3>
+          <p class="text-sm text-gray-600">Mô tả ngắn gọn về địa điểm này...</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <div class="bg-gray-300 h-40 rounded mb-4"></div>
+          <h3 class="font-semibold text-lg mb-2">Tên địa điểm B</h3>
+          <p class="text-sm text-gray-600">Mô tả ngắn gọn về địa điểm này...</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow">
+          <div class="bg-gray-300 h-40 rounded mb-4"></div>
+          <h3 class="font-semibold text-lg mb-2">Tên địa điểm C</h3>
+          <p class="text-sm text-gray-600">Mô tả ngắn gọn về địa điểm này...</p>
+        </div>
+      </div>
     </div>
   </section>
 
