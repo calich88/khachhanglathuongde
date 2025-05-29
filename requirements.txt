@@ -1,6 +1,0 @@
-streamlit
-pandas
-nltk
-vaderSentiment
-bertopic
-sentence-transformers
